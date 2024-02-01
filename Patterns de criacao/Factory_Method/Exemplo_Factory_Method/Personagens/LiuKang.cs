@@ -1,14 +1,17 @@
 ﻿using System;
+using Exemplo_Factory_Method.Personagens.Relacionamentos;
 
 namespace Exemplo_Factory_Method.Personagens
 {
     public class LiuKang : IPersonagem
     {
-        public int MyProperty { get; set; }
+        public List<Golpes> Golpes { get; set; } = new List<Golpes>();
+
+        public int Vida { get; set; } = 100;
 
         public LiuKang()
         {
-
+            Golpes.Add(new Golpes("Porrada", 10));
         }
 
         public void Escolhido()

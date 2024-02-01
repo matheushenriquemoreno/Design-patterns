@@ -12,8 +12,14 @@ string escolha = Console.ReadLine();
 IPersonagem personagem = fabrica.Escolher_Personagem(escolha);
 
 Console.WriteLine("Você vai jogar com o personagem:");
+
 personagem.Escolhido();
 
+Console.WriteLine("------------ Lista de Golpes--------------");
+foreach(var golpe in personagem.Golpes)
+{
+    Console.WriteLine($"Tipo: {golpe.Tipo}, Retira de vida {golpe.RetiraDeVida}");
+}
 
 var teste = personagem.GetType();
 Console.WriteLine(teste);
