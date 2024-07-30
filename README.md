@@ -16,7 +16,7 @@ Os autores agruparam os Desing Patterns em três tipos diferentes: Creational(Cr
 
 Para o estudo e as implementações, estão sendo utilizados 2 sites especializados sobre o assunto, e também um cursos via as plataformas Udemy e Alura visando concretizar o aprendizado.
 Os sites são:
- -  [Refactoring Guro](https://github.com/pandao/editor.md "Refactoring Guro")
+ -  [Refactoring Guro](https://refactoring.guru/pt-br "Refactoring Guro")
  -  [C# Desing Patterns](https://www.dofactory.com/net/design-patterns "C# Desing Patterns")
 
 ### Os seguintes padrões foram abordados ate o momento:
