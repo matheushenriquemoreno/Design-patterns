@@ -20,9 +20,16 @@ Os sites são:
  -  [C# Desing Patterns](https://www.dofactory.com/net/design-patterns "C# Desing Patterns")
 
 ### Os seguintes padrões foram abordados ate o momento:
-**Padrões de Criação**
+
+**Padrões Criacionais**
 - Abstract Factory
 - Builder
 - Factory Method
 - Prototype
 - Singleton
+
+**Padrões Estruturais**
+
+
+**Padrões Comportamentais**
+- Observer
