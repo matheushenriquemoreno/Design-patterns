@@ -1,21 +1,19 @@
-import ObserverProdutos from "../Padrao/Observer";
-import { ProdutoObservar } from "./ProdutoObservar";
+import { Produto } from "./Produto";
 
-export default class ClienteIphone implements ObserverProdutos{
-    private readonly produtos: ProdutoObservar[];
-    private nome:string;
+export default class Cliente{
+    private readonly produtos: Produto[];
+    private _nome:string;
 
-    constructor(nome:string, produtosObservar: ProdutoObservar[]){
-        this.nome = nome;
+    constructor(nome:string, produtosObservar: Produto[]){
+        this._nome = nome;
         this.produtos = produtosObservar;
     }
     
-    obterProdutosDeIntereceCliente(){
-        return this.produtos;
+    get nome():string {
+        return this._nome
     }
 
-    eventoOcorreu (produto: ProdutoObservar) {
-        console.log("Recebi a notificação: "+ this.nome)
-        console.log(`Produto: ${produto.nome}, Valor: ${produto.price}`)
+    obterProdutosDeIntereceCliente(){
+        return this.produtos;
     }
 }
